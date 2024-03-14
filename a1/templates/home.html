@@ -1,0 +1,90 @@
+<!DOCTYPE >
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>
+    </title>
+
+</head>
+<body>
+    
+    <style>
+        body {background-color:E1AEFF ;
+            box-sizing: content-box; 
+        }
+        input[type=submit] {
+  background-color:9336B4 ;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+h3{
+  font-family:'Brush Script MT', cursive ;
+  font-size: x-large;
+}
+.u{
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color:E1AEFF;
+  color:#FE7BE5;
+  background-position: center;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXMUA5k9hyey6owKJZevOH5P2wxqGwX4MbCw&usqp=CAU');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+        </style>
+        
+        <center><h1 style= "color:#273c75;">let's know your Glass type!!</h1>
+     <center><h3 style= "color:9336B4;">Enter the Data</h3>
+       <center> <form action="{% url 'result' %}" class="container">
+
+       <!-- # {% csrf_token %} -->
+        <center><div class="u">
+        RI:<input type="text"  required name="RI"><br><br>
+        Na:<input type="text" required name="Na"><br><br>
+        Mg:<input type="text" required name="Mg"><br><br>
+        AI:<input type="text" required name="AI"><br><br>
+        Si:<input type="text" required name="Si"><br><br>
+        K:<input type="text" required name="K"><br><br>
+        Ca:<input type="text" required name="Ca"><br><br>
+        Ba:<input type="text" required name="Ba"><br><br>
+        Fe:<input type="text" required name="Fe"><br><br>
+</div></center>
+        <input type="submit" name="" value="submit">    
+        </form>
+        <script>
+           
+            var header = document.querySelector("h1");
+          function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+              color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+          }
+          function changeHeaderColor() {
+            colorInput = getRandomColor();
+            header.style.color = colorInput;
+          }
+          setInterval("changeHeaderColor()", 500);
+    
+        //   $('h3').click(function()
+        //   {
+        //     console.log("clicked");
+        //     alert("ok");
+        // })
+        // $('h3').click(function()
+        // {
+        //   $('.required').slideUp(3000)
+        //   $('.required').slideDown(3000)
+        //   $('.required').fadeOut(3000)
+        //   $('.required').fadeIn(3000)
+        // })
+          </script>
+</body>
+</html>

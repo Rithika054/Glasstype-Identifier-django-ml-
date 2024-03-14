@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta charset ="utf-8">
+    <title>
+        simple
+    </title>
+</head>
+<body >
+    <style>
+        body{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQms7arBR36OsZDijB5m_5NeiVWuO_RBV7ZmR1n6dbNPCVOobFD2OuieiId4MBK8ATZiwg&usqp=CAU');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+    <center><h1> The Results are here</h1>
+    <h3>The data you have entered is :{{lis}}</h3>
+   
+   <h3>The category of the Glass is {{ans}}</h3></center>
+  
+<div class="a">
+    <span class="border border-black">
+    <pre>
+        Type of glass:(class attribute)
+                --1 buildingwindowsfloatprocessed
+                --2 buildingwindowsnonfloatprocessed
+                --3 vehiclewindowsfloatprocessed
+                --4 vehiclewindowsnonfloatprocessed (none in the database)
+                --5 containers
+                --6 tableware
+                --7 headlamps
+    </span>
+    </pre></div>
+    </span>
+    <center><a href="{% url 'index' %}">click here </a>
+
+    <script>
+        // function validateForm(){
+        //   let x=document.forms["myform"]["fname"].value;
+        //   let y=document.forms["myform"]["fname"].value;
+        //   if (x == "" & y==""){
+        //     alert("Mandatory Fields");
+        //     document.getElementById("floatingInput").style.borderColor="red";
+        //     return false;
+        //   }
+        // }
+      //   var header = document.querySelector("h1");
+      // function getRandomColor() {
+      //   var letters = "0123456789ABCDEF";
+      //   var color = "#";
+      //   for (var i = 0; i < 6; i++) {
+      //     color += letters[Math.floor(Math.random() * 16)];
+      //   }
+      //   return color;
+      // }
+      // function changeHeaderColor() {
+
+      //   header.style.color = colorInput;
+      // }
+      // setInterval("changeHeaderColor()", 500);
+
+        $('h1').click(function()
+        {
+            console.log("clicked");
+            alert("ok");
+        })
+        $('h1').click(function()
+        {
+        $('.required').slideUp(3000)
+        $('.required').slideDown(3000)
+        $('.required').fadeOut(3000)
+        $('.required').fadeIn(3000)
+        })
+      </script>
+</body>
+</html>
